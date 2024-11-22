@@ -15,6 +15,10 @@ A fun and interactive memory game built with React and Vite. Test your memory by
 - **Vite**: Fast build tool and development server
 - **CSS**: For styling and animations
 
+## Live Demo
+
+Check out the deployed project here: [Flip Cards Memory Game](https://flip-cards-memory-game.onrender.com)
+
 ## Installation
 
 1. Clone the repository:
