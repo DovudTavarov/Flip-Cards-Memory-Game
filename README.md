@@ -8,10 +8,13 @@ A fun and interactive memory game built with React and Vite. Test your memory by
 - Tracks the number of attempts and matches
 - Smooth flipping animations
 - Reset button to start a new game
+- State management with Redux Toolkit for predictable and centralized state handling
 
 ## Tech Stack
 
 - **React**: Component-based UI
+- **Redux Toolkit**: Simplified state management and logic handling
+- **React-Redux**: For connecting React components with Redux state
 - **Vite**: Fast build tool and development server
 - **CSS**: For styling and animations
 

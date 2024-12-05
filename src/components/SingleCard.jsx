@@ -1,12 +1,18 @@
-const SingleCard = ({ card, handleCardClick, flipped, isDisabled }) => {
+import { useDispatch, useSelector } from "react-redux";
+import { cardClick } from "../redux/gameSlice";
+
+const SingleCard = ({ card, flipped }) => {
+  const dispatch = useDispatch();
+
+  const { cardsDisabled } = useSelector((state) => state.game);
   return (
     <div className="card">
       <div className={flipped ? "flipped" : ""}>
         <img src={card.src} alt="card front" className="front" />
         <img
           onClick={() => {
-            if (!isDisabled) {
-              handleCardClick(card);
+            if (!cardsDisabled) {
+              dispatch(cardClick(card));
             }
           }}
           src="/img/cover.png"
